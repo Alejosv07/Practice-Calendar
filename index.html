@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calendario practica</title>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="" class="nav__btn">Day</a>
+            <a href="" class="nav__btn nav__btn--active">Calendar</a>
+        </nav>
+        <div class="darkMode">
+            <button id="darkMode" class="material-icons-outlined">
+                nightlight_round
+            </button>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- container -->
+    <div class="container">
+        <!-- container calendario -->
+        <div class="container__header">
+            <!-- calendario month -->
+            <h2 class="calendario__month" id="calendario__month">Enero</h2>
+            <!-- end calendario month -->
+            <!-- controls next prev -->
+            <div class="controls">
+                <!-- btn prev -->
+                <button class="btn" id="btnPreview">
+                    <span class="material-icons-outlined">
+                        chevron_left
+                    </span>
+                </button>
+                <!-- end btn prev -->
+                <!-- btn next -->
+                <button class="btn" id="btnNext">
+                    <span class="material-icons-outlined">
+                        chevron_right
+                    </span>
+                </button>
+                <!-- end btn next -->
+
+            </div>
+            <!-- end controls next prev -->
+        </div>
+        <div class="calendario" id="calendario">
+        </div>
+        <!-- end container calendario -->
+    </div>
+    <!-- end container -->
+    <script src="js/logica.js"></script>
+</body>
+
+</html>
