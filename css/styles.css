@@ -1,6 +1,7 @@
 :root {
-    --color--p: black;
-    --color--s: white;
+    --color-oscuro: black;
+    --color-fondo: #ededed;
+    --color-claro: white;
     --color--hoverNav: rgb(219, 24, 24);
 }
 
@@ -17,8 +18,8 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 3rem;
     min-height: 100vh;
-    background-color: var(--color--s);
-    color: var(--color--p);
+    background-color: var(--color-fondo);
+    color: var(--color-oscuro);
 }
 
 
@@ -44,7 +45,7 @@ header
 
 .nav__btn {
     text-decoration: none;
-    color: var(--color--p);
+    color: var(--color-oscuro);
 }
 
 .nav__btn:hover::after {
@@ -66,7 +67,7 @@ header
     width: 100%;
     height: 4px;
     border-radius: 6px;
-    background-color: var(--color--p);
+    background-color: var(--color-oscuro);
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
@@ -81,7 +82,7 @@ header
     cursor: pointer;
     border: none;
     background-color: transparent;
-    color: var(--color--p);
+    color: var(--color-oscuro);
 }
 
 .container__header {
@@ -92,7 +93,14 @@ header
 
 .btn {
     cursor: pointer;
-    border: 0;
+    border-radius: 6px;
+    border: 1px solid var(--color-oscuro);
+    background-color: var(--color-fondo);
+    color: var(--color-oscuro);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
 }
 
 .btn:active {
@@ -117,8 +125,8 @@ header
 .calendario {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    border-top: 1px solid var(--color--p);
-    border-left: 1px solid var(--color--p);
+    border-top: 1px solid var(--color-oscuro);
+    border-left: 1px solid var(--color-oscuro);
 }
 
 .calendario__celda {
@@ -126,12 +134,17 @@ header
     flex-wrap: wrap;
     flex-direction: column;
     padding: 0 1em;
-    border-right: 1px solid var(--color--p);
-    border-bottom: 1px solid var(--color--p);
+    border-right: 1px solid var(--color-oscuro);
+    border-bottom: 1px solid var(--color-oscuro);
 }
 
 .calendario__celda:hover {
     cursor: pointer;
-    background-color: var(--color--p);
-    color: var(--color--s);
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+}
+
+.active-day {
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
 }
